@@ -25,11 +25,11 @@ function build_recovery {
 
 # Check 1st option
 case "$1" in
-	i9105 )
+	kylepro )
 		DEVICE=$1
 		FAST=1
 		;;
-	i9105p )
+	kyleprods )
 		DEVICE=$1
 		FAST=1
 		;;
