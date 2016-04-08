@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Note: Maybe not for Windows
+
+cd ..
+
+export USE_CCACHE=1
+
+mkdir ~/bin
+
+PATH=~/bin:$PATH
+
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+chmod a+x ~/bin/repo
+
+mkdir android
+
+cd android
+
+repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r24
