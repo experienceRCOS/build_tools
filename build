@@ -33,7 +33,7 @@ case "$1" in
 		DEVICE=$1
 		FAST=1
 		;;
-	trendplus )
+	bothdevices )
 		BOTH=1
 		DEVICE='kylepro kyleprods'
 		FAST=1
@@ -125,7 +125,7 @@ if [[ !($FAST) ]]; then
 		make clean
 	fi
 
-	echo -n 'Device? (kylepro or kyleprods): '
+	echo -n 'Device? (kylepro, kyleprods or bothdevices): '
 	read DEVICE
 	# Check if given proper device DNAME
 	if [[ $DEVICE != kylepro && $DEVICE != kyleprods ]]; then
