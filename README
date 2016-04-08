@@ -7,6 +7,8 @@ Run "git clone https://github.com/ghsr/build_tools.git -b aosp-6.0" in root of R
 
 Description of scripts:
 -------------
+downloadaospsource - downloads source from AOSP
+
 resync - reset all changes in ROM sources, sync and get prebuilts. Use "-o" to reset changes only.
 
 patch - patch ROM sources.
